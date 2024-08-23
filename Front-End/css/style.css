@@ -1,0 +1,19 @@
+.menu {
+    display: grid;
+    flex-direction: column;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.link_menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 3rem;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Arial', sans-serif;
+}

@@ -38,8 +38,12 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+/* MENU */
 header {
     background-color: #fff;
     padding: 20px;
@@ -47,11 +51,42 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 10%;
    /* flex-direction: column;*/
 }
 
 .logo img {
-    max-width: 150px;
+    width: 71px; 
+    height: 67px; 
+    object-fit: cover;
+    margin-left: -180px;
+    margin-right: 150px;
+}
+
+.perfil{
+    display: flex;
+    margin-right: -250px;
+    margin-left: 150px;
+}
+
+.perfil img {
+    width: 40px; 
+    height: 40px; 
+    object-fit: cover;
+    border-radius: 100%;
+    margin-top: 5px;
+    margin: 0 15px;
+}
+
+.perfil a{
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    align-self: center;
+    font-size: small;
 }
 
 nav ul {
@@ -61,7 +96,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 30px;
 }
 
 nav ul li a {
@@ -74,6 +109,8 @@ nav ul li a:hover {
     color: #645af0;
 }
 
+/* FIM MENU */
+
 main {
     padding: 20px;
     text-align: center;
@@ -84,8 +121,81 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: auto;
 }
 
+/* LISTA DOS PROJETOS */
+
+.novo_projeto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: -5px;
+}
+
+.novo_projeto h1{
+    font-family: Arial, sans-serif;
+    align-self: center;
+}
+
+.novo_projeto button{
+    background-color: #3a84f4;
+    border: 0px;
+    border-radius: 5px;
+    width: 10%;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 350px;
+    margin-right: -450px;
+}
+
+.novo_projeto button:hover{
+    background-color: #336dc3;
+}
+
+.novo_projeto a{
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: #e8ebf0;
+    font-weight: bold;
+    align-self: center;
+    font-size: small;
+}
+
+#projetos {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+#projetos td, #projetos th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#projetos a{
+    text-decoration: none;
+    color: #336dc3;
+}
+  
+#projetos tr:nth-child(even){
+    background-color: #e8ebf0;
+}
+  
+#projetos tr:hover {
+    background-color: #ddd;
+}
+  
+#projetos th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2b2f3a;
+    color: #e8ebf0;
+}
+
+  /* FIM LISTA DOS PROJETOS */

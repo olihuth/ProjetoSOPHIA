@@ -3,9 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projetos</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./img/logo-black.svg" alt=""></a>
+        </div>
+        <!-- Alterei a div para nav para ficar mais fácil identificar que é o menu -->
+        <nav> 
+            <ul>
+                <!-- <li><a href="#"> Home </a></li> -->
+                <li><a href="dashboards.html"> Dashboards </a></li>
+                <li><a href="listaProjetos.html"> Projetos </a></li>
+                <li><a href="sobreProjeto.html"> Sobre o Projeto </a></li>
+                <!-- <li><a href="perfil.html"> Perfil </a></li> -->
+            </ul>
+        </nav>
+        <div class="perfil">
+            <a href="perfil.html"><p> Olá, [nome]! </p></a>
+            <a href="perfil.html"><img src="./img/perfil.jpg" alt=""></a>
+        </div>
+    </header>
+
+    <main>
+        <h1>S.O.P.H.I.A.</h1>
+    </main>
+
+    <!-- Nessa pag vai ter um botao pra redirecionar para a pag de criacao de projeto -->
+    <div class="novo_projeto">
+        <h1>Projetos Cadastrados</h1>
+        <button type="submit"><a href="novoProjeto.html">Novo</a></button>
+    </div>
+    
+    <!-- Tabela com os projetos ja cadastrados -->
+    <div class="tabela_projetos">
+        <table id="projetos">
+            <tr>
+            <th>ID do Projeto</th>
+            <th>Cliente</th>
+            <th>Gestor(a) Responsável</th>
+            <th>Horas Contratadas</th>
+            </tr>
+            <tr>
+            <td><a href="dashboards.html">000001</a></td>
+            <td>Acer</td>
+            <td>Anderson Ferreira de Matos</td>
+            <td>240</td>
+            </tr>
+            <tr>
+            <td><a href="dashboards.html">000002</a></td>
+            <td>Guarana Antartica</td>
+            <td>Karen Cristiane da Silva</td>
+            <td>100</td>
+            </tr>
+            <tr>
+            <td><a href="dashboards.html">000003</a></td>
+            <td>Unilever</td>
+            <td>Ana Catarina Santos</td>
+            <td>400</td>
+            </tr>
+            <tr>
+            <td><a href="dashboards.html">000004</a></td>
+            <td>XYZ</td>
+            <td>Fernando Schwazinegger</td>
+            <td>220</td>
+            </tr>
+            <tr>
+            <td><a href="dashboards.html">000005</a></td>
+            <td>Cacau Show</td>
+            <td>Sophia Carla Hugo</td>
+            <td>300</td>
+            </tr>
+            <tr>
+            <td><a href="dashboards.html">000006</a></td>
+            <td>AquelaCompania</td>
+            <td>Ana Catarina Santos</td>
+            <td>100</td>
+            </tr>
+            <tr>
+            <td><a href="dashboards.html">000007</a></td>
+            <td>Trivago</td>
+            <td>Fernando Schwazinegger</td>
+            <td>380</td>
+            </tr>
+            <tr>
+            <td><a href="dashboards.html">000008</a></td>
+            <td>Huion</td>
+            <td>Giovanni Rovelli</td>
+            <td>300</td>
+            </tr>
+            <tr>
+            <td><a href="dashboards.html">000009</a></td>
+            <td>Positivo</td>
+            <td>Simon Crowther</td>
+            <td>280</td>
+            </tr>
+            <tr>
+            <td><a href="dashboards.html">000010</a></td>
+            <td>MagazineLuiza</td>
+            <td>Marie Bertrand</td>
+            <td>600</td>
+            </tr>
+            <tr>
+            <td><a href="dashboards.html">000011</a></td>
+            <td>Casas Bahia</td>
+            <td>Anderson Ferreira de Matos</td>
+            <td>360</td>
+            </tr>
+            <tr>
+            <td><a href="dashboards.html">000012</a></td>
+            <td>BrasilCacau</td>
+            <td>Marie Bertrand</td>
+            <td>150</td>
+            </tr>
+        </table>
+      </div>
+
+    <footer>
+        <p>2024 S.O.P.H.I.A - Isabelle - Juliana - Oliver - Saul</p>
+    </footer>
+
+    <script src="script.js"></script>
     
 </body>
 </html>

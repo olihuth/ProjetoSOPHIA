@@ -1,24 +1,4 @@
-/* Deixei seu CSS comentado caso queira reutilizar ele
-
-.nav {
-    display: grid;
-    flex-direction: column;
-    height: 2.5rem;
-    justify-content: center;
-    align-items: center;
-    gap: 7rem;
-    font-family: 'Arial', sans-serif;
-}
-
-.link_menu{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 3rem;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: 'Arial', sans-serif;
-} */
+/* vlw, mas n vou usar n */
 
 /*
 Cores da logo:
@@ -65,13 +45,13 @@ header {
     margin-right: 150px;
 }
 
-.perfil{
+.perfilHeader{
     display: flex;
     margin-right: -250px;
     margin-left: 150px;
 }
 
-.perfil img {
+.perfilHeader img {
     width: 40px; 
     height: 40px; 
     object-fit: cover;
@@ -80,7 +60,7 @@ header {
     margin: 0 15px;
 }
 
-.perfil a{
+.perfilHeader a{
     font-family: Arial, sans-serif;
     text-decoration: none;
     color: #333;
@@ -212,3 +192,39 @@ footer {
 }
 
   /* FIM LISTA DOS PROJETOS */
+
+  /* PERFIL */
+.perfil{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.perfil button{
+    border: none;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    font-size:20px;
+    color: #333;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    margin-top: -30px;
+    margin-left: 150px;
+}
+
+.ftperfil img{
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 100%;
+    margin-top: 5px;
+    margin: 0 15px;
+}
+
+
+
+
+  /* FIM PERFIL */

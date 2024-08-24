@@ -6,6 +6,7 @@
     <title>Perfil - [Fulano de tal]</title>
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -22,15 +23,51 @@
                 <!-- <li><a href="perfil.html"> Perfil </a></li> -->
             </ul>
         </nav>
-        <div class="perfil">
+        <div class="perfilHeader">
             <a href="#"><p> Olá, [nome]! </p></a>
-            <a href="#"><img src="./img/perfil.jpg" alt=""></a>
+            <a href="#"><img src="./img/perfil.jpg" alt="Sua foto de perfil"></a>
         </div>
     </header>
 
     <main>
         <h1>S.O.P.H.I.A.</h1>
     </main>
+
+    <div class="perfil">
+        <div class="ftperfil">
+            <img src="./img/perfil.jpg" alt="Sua foto de perfil">
+        </div>
+        <button popovertarget="editPerfil"><i class="fa fa-pencil"></i></button>
+        <div class="dadosPerfil">
+            <h3>Nome:</h3>
+            <p>Isabelle Bandeira</p>
+            <h3>Nome de Usuário:</h3>
+            <p>isaband</p>
+            <h3>Email:</h3>
+            <p>isabelle.bandeira@softtech.com</p>
+            <h3>Senha:</h3>
+            <p>********</p>
+        </div>
+    </div>
+
+    <div popover id="editPerfil">
+        <button popovertarget="editPerfil" popovertargetaction="hide">X</button>
+        <form class="form">
+            <label for="nomeUsuario">Nome:</label>
+                <input type="text" placeholder="Isabelle Bandeira" id="nomeUsuario">
+            <label for="userName">Nome de Usuário:</label>
+                <input type="text" placeholder="isaband" id="userName">
+            <label for="emailUsuario">Email:</label>
+                <input type="text" placeholder="isabelle.bandeira@softtech.com" id="emailUsuario">
+            <label for="senhaUsuarioAntiga">Senha antiga:</label>
+                <input type="password" id="senhaUsuarioAntiga">
+            <label for="novaSenhaUsuario">Nova Senha:</label>
+                <input type="password" id="novaSenhaUsuario">
+            <label for="confirmSenhaUsuario">Senha:</label>
+                <input type="password" id="confirmSenhaUsuario">
+        </form>
+        <button type="submit">Salvar</button>
+    </div>
 
     <footer>
         <p>2024 S.O.P.H.I.A - Isabelle - Juliana - Oliver - Saul</p>

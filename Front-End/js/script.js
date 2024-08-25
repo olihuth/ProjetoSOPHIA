@@ -11,3 +11,7 @@ function changeUsernameHeader(){
     document.getElementById("usernameHeader").innerText = "Olá, " + loginUsername + "!";
 }
 
+function resetEditPerfilForm(){
+    document.getElementById("editPerfilForm").reset();
+}
+

@@ -53,10 +53,10 @@
     <div popover id="editPerfil">
         <div class="stylePopUp">
             <div class="exitPopUp">
-                <button popovertarget="editPerfil" popovertargetaction="hide">X</button>    
+                <button popovertarget="editPerfil" popovertargetaction="hide" onclick="resetEditPerfilForm()">X</button>    
             </div>
             <div class="form">
-                <form>
+                <form id="editPerfilForm">
                     <div class="input">
                         <label for="nomeUsuario">Nome:</label>
                         <input type="text" placeholder="Isabelle Bandeira" id="nomeUsuario">
@@ -78,14 +78,14 @@
                         <input type="password" id="novaSenhaUsuario">
                     </div>
                     <div class="input">
-                        <label for="confirmSenhaUsuario">Senha:</label>
+                        <label for="confirmSenhaUsuario">Confirme a senha:</label>
                         <input type="password" id="confirmSenhaUsuario">
                     </div>
                     
                 </form>
             </div>
             <div class="submitBtn">
-                <button type="submit">Salvar</button>
+                <button type="submit" form="editPerfilForm" popovertarget="editPerfil" popovertargetaction="hide">Salvar</button>
             </div>
         </div>
     </div>
@@ -94,7 +94,7 @@
         <p>2024 S.O.P.H.I.A - Isabelle - Juliana - Oliver - Saul</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     
 </body>
 </html>

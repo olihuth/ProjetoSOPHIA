@@ -49,24 +49,45 @@
             <p>********</p>
         </div>
     </div>
-
+    
     <div popover id="editPerfil">
-        <button popovertarget="editPerfil" popovertargetaction="hide">X</button>
-        <form class="form">
-            <label for="nomeUsuario">Nome:</label>
-                <input type="text" placeholder="Isabelle Bandeira" id="nomeUsuario">
-            <label for="userName">Nome de Usuário:</label>
-                <input type="text" placeholder="isaband" id="userName">
-            <label for="emailUsuario">Email:</label>
-                <input type="text" placeholder="isabelle.bandeira@softtech.com" id="emailUsuario">
-            <label for="senhaUsuarioAntiga">Senha antiga:</label>
-                <input type="password" id="senhaUsuarioAntiga">
-            <label for="novaSenhaUsuario">Nova Senha:</label>
-                <input type="password" id="novaSenhaUsuario">
-            <label for="confirmSenhaUsuario">Senha:</label>
-                <input type="password" id="confirmSenhaUsuario">
-        </form>
-        <button type="submit">Salvar</button>
+        <div class="stylePopUp">
+            <div class="exitPopUp">
+                <button popovertarget="editPerfil" popovertargetaction="hide">X</button>    
+            </div>
+            <div class="form">
+                <form>
+                    <div class="input">
+                        <label for="nomeUsuario">Nome:</label>
+                        <input type="text" placeholder="Isabelle Bandeira" id="nomeUsuario">
+                    </div>
+                    <div class="input">
+                        <label for="userName">Nome de Usuário:</label>
+                        <input type="text" placeholder="isaband" id="userName"> 
+                    </div>
+                    <div class="input">
+                        <label for="emailUsuario">Email:</label>
+                        <input type="text" placeholder="isabelle.bandeira@softtech.com" id="emailUsuario">   
+                    </div>
+                    <div class="input">
+                        <label for="senhaUsuarioAntiga">Senha antiga:</label>
+                        <input type="password" id="senhaUsuarioAntiga">   
+                    </div>
+                    <div class="input">
+                        <label for="novaSenhaUsuario">Nova Senha:</label>
+                        <input type="password" id="novaSenhaUsuario">
+                    </div>
+                    <div class="input">
+                        <label for="confirmSenhaUsuario">Senha:</label>
+                        <input type="password" id="confirmSenhaUsuario">
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="submitBtn">
+                <button type="submit">Salvar</button>
+            </div>
+        </div>
     </div>
 
     <footer>

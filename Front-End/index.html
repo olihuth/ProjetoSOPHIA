@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,10 @@
 <body>
     <header>
         <div class="logo">
-            <a href="#"><img src="./img/logo-black.svg" alt=""></a>
+            <a href="index.html"><img src="./img/logo-black.svg" alt=""></a>
         </div>
-        <!-- Alterei a div para nav para ficar mais fácil identificar que é o menu -->
+        
+        <!-- Menu -->
         <nav> 
             <ul>
                 <!-- <li><a href="#"> Home </a></li> -->
@@ -22,20 +23,36 @@
                 <!-- <li><a href="perfil.html"> Perfil </a></li> -->
             </ul>
         </nav>
+        <!-- FIM Menu -->
+
         <div class="perfilHeader">
-            <a href="perfil.html"><p id="usernameHeader"> Olá, [nome]! </p></a>
-            <a href="perfil.html"><img src="./img/perfil.jpg" alt=""></a>
+            <a href="perfil.html" class="perfil-link">
+                <span id="usernameHeader">Olá, [usuário]! </span>
+                <img src="./img/perfil.jpg" alt="" class="avatar">
+            </a>
         </div>
     </header>
 
     <main>
         <h1>S.O.P.H.I.A.</h1>
+        
+        <!-- VIDEO PITCH -->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7eGjf2ifzdk?si=GwxATAbobzpMDyLA" title="Video Picth SOPHIA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <!-- FIM VIDEO PITCH -->
+        
+        <!-- Como funciona -->
+        <div class="como-funciona">
+            <h2>Como funciona?</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos esse corrupti expedita similique, eveniet totam beatae nihil amet fugiat accusantium soluta, quo ex laboriosam doloremque libero vitae et iste quis.
+            Commodi repudiandae exercitationem totam repellendus nobis omnis harum consectetur, unde aut dolorum fugiat delectus tempora molestias deserunt distinctio ipsum asperiores debitis ut sunt libero in dolorem. Minus inventore quas tempore.</p>
+        </div>
+        <!--FIM Como funciona -->
+
     </main>
-
-    <!-- VIDEO PITCH -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/7eGjf2ifzdk?si=GwxATAbobzpMDyLA" title="Video Picth SOPHIA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    <footer>
+        
+        <footer>
         <p>2024 S.O.P.H.I.A - Isabelle - Juliana - Oliver - Saul</p>
     </footer>
 

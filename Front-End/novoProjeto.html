@@ -6,6 +6,7 @@
     <title>S.O.P.H.I.A. - Novo Projeto</title>
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/novoProjeto-styles.css" />
 </head>
 <body>
     <header>
@@ -27,14 +28,57 @@
 
         <div class="perfilHeader">
             <a href="perfil.html" class="perfil-link">
-                <span id="usernameHeader">Olá, [usuário]! </span>
+                <span id="usernameHeader">Olá, Admin! </span>
                 <img src="./img/perfil.jpg" alt="" class="avatar">
             </a>
         </div>
+
+        <a href="login.html" class="botao-sair">Sair</a>
     </header>
 
     <main>
-        <h1>S.O.P.H.I.A.</h1>
+        <div class="upload-section">
+            <label for="upload-base-dados" class="upload-btn">Upload da Base de Dados</label>
+            <input type="file" id="upload-base-dados" name="upload-base-dados" accept=".csv, .xlsx, .xls">
+        </div>
+
+        <!-- Formulário para cadastro de novo projeto -->
+        <form class="projeto-form">
+            <div class="form-group">
+                <label for="nome-projeto">Nome do Projeto:</label>
+                <input type="text" id="nome-projeto" name="nome-projeto" required>
+            </div>
+
+            <div class="form-group">
+                <label for="modulos">Módulos:</label>
+                <select id="modulos" name="modulos" multiple required>
+                    <option value="modulo1">Manutenção</option>
+                    <option value="modulo2">Melhoria</option>
+                    <option value="modulo3">Projetos</option>
+                    <option value="modulo4">Suporte</option>
+                    <option value="modulo5">Erro</option>
+                    <option value="modulo6">Problema</option>
+                    <option value="modulo7">Perfis</option>
+                    <option value="modulo8">Transporte</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="complexidade">Complexidade:</label>
+                <select id="complexidade" name="complexidade" required>
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Média</option>
+                    <option value="alta">Alta</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="data-final">Data Final do Contrato:</label>
+                <input type="date" id="data-final" name="data-final" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar</button>
+        </form>
     </main>
 
     <footer>

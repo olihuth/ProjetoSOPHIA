@@ -2,6 +2,13 @@
 Cores da logo:
 roxo: #645af0
 ciano: #6eddf5
+branco(body): #f4f4f4
+cinza: #333
+branco: #fff
+azul-escuro: #336dc3
+azul-claro: #3a84f4
+azul quase branco: #e8ebf0
+quase preto: #2b2f3a
 */
 
 * {
@@ -24,7 +31,7 @@ body {
 /* MENU */
 header {
     background-color: #fff;
-    padding: 20px;
+    padding: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
@@ -78,7 +85,7 @@ nav ul li a:hover {
     margin-right: 20px;
 }
 
-.profile span {
+.perfil-link span {
     margin-right: 10px;
 }
 
@@ -118,38 +125,6 @@ h1 {
     color: #333;
 }
 
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.video-container iframe {
-    max-width: 100%;
-    border: none;
-    border-radius: 10px;
-}
-
-.como-funciona {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.como-funciona h2 {
-    font-size: 2em;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.como-funciona p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #666;
-}
-
 footer {
     background-color: #333;
     color: #fff;
@@ -161,179 +136,3 @@ footer {
     clear: both;
 }
 
-/* LISTA DOS PROJETOS */
-
-.novo_projeto {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.botao {
-    background-color: #645af0;
-    
-
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.botao:hover {
-    background-color: #6eddf5;
-}
-
-#projetos {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-  
-#projetos td, #projetos th {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-#projetos a{
-    text-decoration: none;
-    color: #336dc3;
-}
-  
-#projetos tr:nth-child(even){
-    background-color: #e8ebf0;
-}
-  
-#projetos tr:hover {
-    background-color: #ddd;
-}
-  
-#projetos th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #2b2f3a;
-    color: #e8ebf0;
-}
-
-  /* FIM LISTA DOS PROJETOS */
-
-  /* PERFIL */
-.perfil{
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-}
-
-.perfil button{
-    border: none;
-    border-radius: 100%;
-    width: 30px;
-    height: 30px;
-    font-size:20px;
-    color: #333;
-    background-color: #f4f4f4;
-    cursor: pointer;
-    margin-top: -30px;
-    margin-left: 150px;
-}
-
-.ftperfil img{
-    width: 150px; 
-    height: 150px; 
-    object-fit: cover;
-    border-radius: 100%;
-    margin-top: 5px;
-    margin: 0 15px;
-}
-
-#editPerfil{
-    width: 30%;
-    height: 60%;
-    align-self: center;
-    justify-self: center;
-    /* display: flex; */
-    /* flex-direction: column; */
-
-    border: 2px outset #ddd;
-    border-radius: 5%;
-}
-
-.stylePopUp{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: auto;
-    justify-content: space-around;
-
-    font-family: Arial, sans-serif;
-    color: #333;
-    font-weight: bold;
-    font-size: large;
-}
-
-.exitPopUp{
-    align-self: flex-end;
-}
-
-.exitPopUp button{
-    width: 150%;
-    border: none;
-    font-family: Arial, sans-serif;
-    color: #333;
-    font-weight: bold;
-    font-size: large;
-    background-color: white;
-    transition: color 0.3s ease;
-}
-
-.exitPopUp button:hover{
-    color: #336dc3;
-    cursor: pointer;
-}
-
-.form{
-    /* display: flex; */
-    align-content: center;
-    flex-direction: column;
-}
-
-.form input{
-    width: 50%;
-    height: 25px;
-    align-self: center;
-}
-
-.input{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2%;
-}
-
-.submitBtn{
-    align-self: center;
-    width: 100%;
-    margin-top: 7%;
-}
-
-.submitBtn button{
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    height: 30px;
-    font-family: Arial, sans-serif;
-    color: #333;
-    font-weight: bold;
-    font-size: large;
-    transition: background-color 0.3s ease;
-}
-
-.submitBtn button:hover{
-    background-color: #336dc3;
-    color: #f4f4f4;
-    cursor: pointer;
-}
-
-  /* FIM PERFIL */

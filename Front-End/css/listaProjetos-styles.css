@@ -1,0 +1,56 @@
+/* LISTA DOS PROJETOS */
+
+.novo_projeto {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.botao {
+    background-color: #645af0;
+    
+
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #6eddf5;
+}
+
+#projetos {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+#projetos td, #projetos th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#projetos a{
+    text-decoration: none;
+    color: #336dc3;
+}
+  
+#projetos tr:nth-child(even){
+    background-color: #e8ebf0;
+}
+  
+#projetos tr:hover {
+    background-color: #ddd;
+}
+  
+#projetos th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2b2f3a;
+    color: #e8ebf0;
+}
+
+  /* FIM LISTA DOS PROJETOS */

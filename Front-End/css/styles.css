@@ -93,11 +93,12 @@ nav ul li a:hover {
     width: 40px; 
     height: 40px; 
     border-radius: 50%;
-    border: 2px solid #333;
+    /* border: 1px solid #333; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .botao-sair {
-    background-color: #ff4c4c;
+    background-color: #3a84f4;
     color: #fff;
     padding: 8px 15px;
     text-decoration: none;
@@ -106,8 +107,8 @@ nav ul li a:hover {
     transition: background-color 0.3s ease;
 }
 
-.btn-logout:hover {
-    background-color: #d93b3b;
+.botao-sair:hover {
+    background-color: #336dc3;
 }
 
 /* FIM MENU */

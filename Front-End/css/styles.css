@@ -100,11 +100,12 @@ nav ul li a:hover {
 .botao-sair {
     background-color: #3a84f4;
     color: #fff;
-    padding: 8px 15px;
+    padding: 8px 20px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    margin-right: 5px;
 }
 
 .botao-sair:hover {

@@ -7,6 +7,8 @@
 
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/novoProjeto-styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -37,8 +39,12 @@
     </header>
 
     <main>
+        <h1>Novo Projeto</h1>
+
         <div class="upload-section">
-            <label for="upload-base-dados" class="upload-btn">Upload da Base de Dados</label>
+            <label for="upload-base-dados" class="upload-btn">
+                <i class="fas fa-upload"></i> Upload da Base de Dados
+            </label>
             <input type="file" id="upload-base-dados" name="upload-base-dados" accept=".csv, .xlsx, .xls">
         </div>
 
@@ -51,16 +57,17 @@
 
             <div class="form-group">
                 <label for="modulos">Módulos:</label>
-                <select id="modulos" name="modulos" multiple required>
-                    <option value="modulo1">Manutenção</option>
-                    <option value="modulo2">Melhoria</option>
-                    <option value="modulo3">Projetos</option>
-                    <option value="modulo4">Suporte</option>
-                    <option value="modulo5">Erro</option>
-                    <option value="modulo6">Problema</option>
-                    <option value="modulo7">Perfis</option>
-                    <option value="modulo8">Transporte</option>
-                </select>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="modulos[]" value="modulo1"> Manutenção</label>
+                    <label><input type="checkbox" name="modulos[]" value="modulo2"> Melhoria</label>
+                    <label><input type="checkbox" name="modulos[]" value="modulo3"> Projetos</label>
+                    <label><input type="checkbox" name="modulos[]" value="modulo4"> Suporte</label>
+                    <label><input type="checkbox" name="modulos[]" value="modulo5"> Erro</label>
+                    <label><input type="checkbox" name="modulos[]" value="modulo6"> Problema</label>
+                    <label><input type="checkbox" name="modulos[]" value="modulo7"> Perfis</label>
+                    <label><input type="checkbox" name="modulos[]" value="modulo8"> Transporte</label>
+                </div>
+                
             </div>
 
             <div class="form-group">

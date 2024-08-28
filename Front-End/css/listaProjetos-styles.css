@@ -1,3 +1,17 @@
+/*
+Cores:
+roxo: #645af0
+ciano: #6eddf5
+branco(body): #f4f4f4
+cinza: #333
+branco: #fff
+azul-escuro: #336dc3
+azul-claro: #3a84f4
+azul quase branco: #e8ebf0
+quase preto: #2b2f3a
+*/
+
+
 /* LISTA DOS PROJETOS */
 
 .novo_projeto {
@@ -6,7 +20,7 @@
 }
 
 .botao {
-    background-color: #645af0;
+    background-color: #3a84f4;
     
 
     color: #fff;
@@ -18,7 +32,7 @@
 }
 
 .botao:hover {
-    background-color: #6eddf5;
+    background-color: #336dc3;
 }
 
 #projetos {

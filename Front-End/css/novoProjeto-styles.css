@@ -1,4 +1,15 @@
-
+/*
+Cores:
+roxo: #645af0
+ciano: #6eddf5
+branco(body): #f4f4f4
+cinza: #333
+branco: #fff
+azul-escuro: #336dc3
+azul-claro: #3a84f4
+azul quase branco: #e8ebf0
+quase preto: #2b2f3a
+*/
 
 .upload-section {
     text-align: center;
@@ -83,16 +94,17 @@ input[type="text"], input[type="date"], select {
     display: inline-block;
     width: 100%;
     padding: 10px;
-    background-color: #28a745;
+    background-color: #3a84f4;
     color: white;
     font-size: 1.2em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
+    transition: background-color 0.3s ease;
 }
 
 .submit-btn:hover {
-    background-color: #218838;
+    background-color: #645af0;
 }
 

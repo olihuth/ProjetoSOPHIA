@@ -1,0 +1,27 @@
+.integrante {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.integrante img {
+    width: 100px;
+    height: auto;
+    border-radius: 25%;
+    margin-right: 20px;
+}
+
+.nome {
+    font-weight: bold; /* Negrito */
+    font-size: 1.2em; /* Fonte maior */
+    text-decoration: underline; /* Sublinhado */
+    display: block; /* Faz o texto começar em uma nova linha, opcional, depende do layout */
+}
+
+.integrante p {
+    max-width: 600px;
+    margin: 0;
+}
+
+
+

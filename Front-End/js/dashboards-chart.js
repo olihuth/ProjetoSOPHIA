@@ -25,7 +25,7 @@ var chrt = document.getElementById("graph");
       },
 });
       
-      
+var arraydata = [1, 2, 3];      
 var chrt = document.getElementById("graph2");
 var graph = new Chart(chrt, {
    type: 'bar',
@@ -33,7 +33,7 @@ var graph = new Chart(chrt, {
       labels: ["N1", "N2", "N3"],
       datasets: [{
          label: "online tutorial subjects",
-         data: [9, 8, 10, 7, 6, 12],
+         data: arraydata,
          backgroundColor: ['yellow', 'aqua', 'pink'],
          borderColor: ['red', 'blue', 'fuchsia'],
          borderWidth: 2,

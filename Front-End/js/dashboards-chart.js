@@ -1,6 +1,6 @@
 var chrt = document.getElementById("graph");
       var graph = new Chart(chrt, {
-         type: 'bar',
+         type: 'pie',
          data: {
             labels: ["HTML", "CSS", "JAVASCRIPT", "CHART.JS", "JQUERY", "BOOTSTRP"],
             datasets: [{
@@ -27,7 +27,7 @@ var chrt = document.getElementById("graph");
 
       var chrt = document.getElementById("graph2");
       var graph = new Chart(chrt, {
-         type: 'bar',
+         type: 'line',
          data: {
             labels: ["HTML", "CSS", "JAVASCRIPT", "CHART.JS", "JQUERY", "BOOTSTRP"],
             datasets: [{

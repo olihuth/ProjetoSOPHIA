@@ -16,7 +16,6 @@ function resetEditPerfilForm(){
 }
 
 function toggleFilterDropdown(){
-    // document.getElementById("dropdownFilter");
     var element = document.getElementById("dropdownFilter");
     var hidden = element.getAttribute("hidden");
 
@@ -24,12 +23,8 @@ function toggleFilterDropdown(){
 
     if (hidden) {
        element.removeAttribute("hidden");
-       console.log("hidden = " + hidden);
-    //    button.innerText = "Hide div";
     } else {
        element.setAttribute("hidden", "hidden");
-       console.log("hidden = " + hidden);
-    //    button.innerText = "Show div";
     }
 }
 

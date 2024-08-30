@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/listaProjetos-styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -38,9 +39,35 @@
 
     <main>
         <h1>Projetos Cadastrados</h1>
-        <div class="novo_projeto">
-            <a href="novoProjeto.html" class="botao">Novo Projeto</a>
+        <div class="botoes">
+            <div class="filterIcon">
+            <button onclick="toggleFilterDropdown()" style="font-size:36px"> <i class="fa fa-filter"></i></button>
         </div>
+            <div class="novo_projeto">
+                <a href="novoProjeto.html" class="botao">Novo Projeto</a>
+            </div> 
+        </div>
+        <!-- dropdown filter -->
+        <div hidden id="dropdownFilter">
+            <div class="filter">
+                <div>
+                    <label for="idProjeto">ID do projeto:</label>
+                    <input id="idProjeto">
+                </div>
+                <div>
+                    <label for="clienteProjeto">Cliente:</label>
+                    <input id="clienteProjeto">
+                </div>
+                <div>
+                    <label for="responsavelProjeto">Responsável:</label>
+                    <input id="responsavelProjeto">
+                </div>
+                <div class="filterBtn">
+                    <button>Filtrar</button>
+                </div>
+            </div>
+        </div>
+       
         
         <!-- Tabela com os projetos ja cadastrados -->
         <div class="tabela_projetos">
@@ -133,7 +160,7 @@
         <p>2024 S.O.P.H.I.A - Isabelle - Juliana - Oliver - Saul</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     
 </body>
 </html>

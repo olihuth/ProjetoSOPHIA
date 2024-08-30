@@ -65,3 +65,10 @@ var graph = new Chart(chrt, {
     padding: 5%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }*/
+
+/*
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/helpers.esm.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="js/dashboards-chart.js"></script>
+*/

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./css/dashboards-styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap">
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -40,35 +39,38 @@
     </header>
 
     <main>
-        <h1>S.O.P.H.I.A.</h1>
-
-        <div class="graph-container">
-            <div class="graph-item">
-                <canvas id="graph1" width="400" height="200"></canvas>
+        <h1>Dashboards</h1>
+        <select id="selecionarProjeto">
+            <option value="project1">Projeto 1 - Basis</option>
+            <option value="project2">Projeto 1 - Funcional</option>
+            <option value="project3">Projeto 2 - Funcional</option>
+        </select>
+        <div class="charts-container">
+            <div class="left-div">
+                    <canvas id="grafico-pizza"></canvas>
             </div>
-            <div class="graph-item">
-                <canvas id="graph3" aria - label="chart"></canvas>
-            </div>
-            <div class="graph-item">
-                <canvas id="graph4" aria - label="chart"></canvas>
-            </div>
-            <div class="graph-item">
-                <canvas id="graph2" aria - label="chart"></canvas>
+            <div class="right-div">
+                <div class="top-right">
+                    <canvas id="grafico-ociosidade"></canvas>
+                    <canvas id="grafico-contrato-demanda"></canvas>
+                </div>
+                <div class="bottom-right">
+                    <canvas id="grafico-linha-atendimentos"></canvas>
+                </div>
             </div>
         </div>
 
     </main>
-
+    
     <footer>
         <p>2024 S.O.P.H.I.A - Isabelle - Juliana - Oliver - Saul</p>
     </footer>
-
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/helpers.esm.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-    <script src="js/dashboards-chart.js"></script>
-    <script src="js/script.js"></script>
+    <script src="./js/dashboards-chart.js"></script>
+    
+    
 
 </body>
 </html>

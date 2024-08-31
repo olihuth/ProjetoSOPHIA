@@ -19,7 +19,7 @@
 .nome {
     font-weight: bold; /* Negrito */
     font-size: 1.2em; /* Fonte maior */
-    text-decoration: underline; /* Sublinhado */
+    text-decoration: none;
     display: block; /* Faz o texto começar em uma nova linha, opcional, depende do layout */
 }
 
@@ -37,5 +37,13 @@
     margin-top: 40px;
 }
 
+#logoLinkedin{
+    width: 20px;
+    height: 20px;
+    display: block;
+    /* margin: auto; */
+    margin-top: 1%;
+    margin-left: 3%;
+}
 
 

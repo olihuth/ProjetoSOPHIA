@@ -28,3 +28,31 @@ function toggleFilterDropdown(){
     }
 }
 
+function cadastroNovoProjeto(){
+    //redireciona pra listaProjeto e abre o popup da IA com link pra pag da IA
+    console.log("oi");
+    nameProjeto = document.getElementById("nome-projeto").value;
+    dataContrato = document.getElementById("data-final").value;
+    console.log(nameProjeto);
+    console.log(dataContrato);
+
+    if(nameProjeto !== "" && dataContrato !== ""){
+        console.log("diff");
+        window.location.href = '/listaProjetos.html';
+    }
+
+}
+
+function hidePopupIA(){
+    const popover = document.getElementById("popupIA");
+    const hideBtn = document.getElementById("hideBtn");
+
+
+    popover.popover = "manual";
+
+    hideBtn.popoverTargetElement = popover;
+    hideBtn.popoverTargetAction = "hide";
+
+    console.log("ue");
+}
+

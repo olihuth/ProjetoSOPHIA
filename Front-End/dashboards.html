@@ -20,8 +20,9 @@
         <nav> 
             <ul>
                 <!-- <li><a href="#"> Home </a></li> -->
-                <li><a href="dashboards.html"> Dashboards </a></li>
                 <li><a href="listaProjetos.html"> Projetos </a></li>
+                <li><a href="dashboards.html"> Dashboards </a></li>
+                <li><a href="historicoIA.html"> Histórico </a></li>
                 <li><a href="sobreProjeto.html"> Sobre o Projeto </a></li>
                 <!-- <li><a href="perfil.html"> Perfil </a></li> -->
             </ul>
@@ -31,7 +32,7 @@
         <div class="perfilHeader">
             <a href="perfil.html" class="perfil-link">
                 <span>Olá, <span class="usernameHeader"> admin!</span> </span>
-                <img src="./img/perfil.jpg" alt="" class="avatar">
+                <img src="./img/logo-color.png" alt="" class="avatar">
             </a>
         </div>
 
@@ -40,25 +41,7 @@
 
     <main>
         <h1>Dashboards</h1>
-        <select id="selecionarProjeto">
-            <option value="project1">Projeto 1 - Basis</option>
-            <option value="project2">Projeto 1 - Funcional</option>
-            <option value="project3">Projeto 2 - Funcional</option>
-        </select>
-        <div class="charts-container">
-            <div class="left-div">
-                    <canvas id="grafico-pizza"></canvas>
-            </div>
-            <div class="right-div">
-                <div class="top-right">
-                    <canvas id="grafico-ociosidade"></canvas>
-                    <canvas id="grafico-contrato-demanda"></canvas>
-                </div>
-                <div class="bottom-right">
-                    <canvas id="grafico-linha-atendimentos"></canvas>
-                </div>
-            </div>
-        </div>
+        <iframe title="Dashboard SOPHIA" width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiZTJhZTE3MGMtN2VkZi00ZjYwLWEyMTUtZDZlN2ExNTJmODA3IiwidCI6IjExZGJiZmUyLTg5YjgtNDU0OS1iZTEwLWNlYzM2NGU1OTU1MSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
 
     </main>
     

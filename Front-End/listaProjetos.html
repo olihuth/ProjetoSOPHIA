@@ -20,8 +20,9 @@
         <nav> 
             <ul>
                 <!-- <li><a href="#"> Home </a></li> -->
-                <li><a href="dashboards.html"> Dashboards </a></li>
                 <li><a href="listaProjetos.html"> Projetos </a></li>
+                <li><a href="dashboards.html"> Dashboards </a></li>
+                <li><a href="historicoIA.html"> Histórico </a></li>
                 <li><a href="sobreProjeto.html"> Sobre o Projeto </a></li>
                 <!-- <li><a href="perfil.html"> Perfil </a></li> -->
             </ul>
@@ -31,7 +32,7 @@
         <div class="perfilHeader">
             <a href="perfil.html" class="perfil-link">
                 <span>Olá, <span class="usernameHeader"> admin!</span> </span>
-                <img src="./img/perfil.jpg" alt="" class="avatar">
+                <img src="./img/logo-color.png" alt="" class="avatar">
             </a>
         </div>
 
@@ -39,6 +40,19 @@
     </header>
 
     <main>
+        <div popover id="popupIA">
+            <div class="textoIA">
+                <p>
+                    <!-- TEXTO RECOMND IA -->
+                    A análise da base de dados indica que a equipe foi corretamente dimensionada para o projeto, com a maioria dos atendimentos realizados por consultores estagiários ou juniores. A complexidade dos atendimentos ficou majoritariamente em Nível 1 (89%), enquanto apenas 11% foram de Nível 2. Atendimentos de Nível 1 ocorreram ao longo de todo o período, e os de Nível 2 foram esporádicos a partir do segundo mês.
+                     <a href="historicoIA.html">Clique aqui!</a>
+                </p>
+            </div>
+            <div class="btnExitIA">
+                <button id="hideBtn" onclick="hidePopupIA()">X</button>
+            </div>
+        </div>
+        
         <h1>Projetos Cadastrados</h1>
         <div class="botoes">
             <div class="filterIcon">
@@ -81,21 +95,21 @@
                 </tr>
                 <tr>
                 <td><a href="dashboards.html">000001</a></td>
-                <td>Acer</td>
+                <td>Softtek</td>
                 <td>Anderson Ferreira de Matos</td>
-                <td>240</td>
+                <td>70</td>
                 </tr>
                 <tr>
                 <td><a href="dashboards.html">000002</a></td>
-                <td>Guarana Antartica</td>
+                <td>Softtek</td>
                 <td>Karen Cristiane da Silva</td>
-                <td>100</td>
+                <td>252</td>
                 </tr>
                 <tr>
                 <td><a href="dashboards.html">000003</a></td>
-                <td>Unilever</td>
+                <td>Softtek</td>
                 <td>Ana Catarina Santos</td>
-                <td>400</td>
+                <td>280</td>
                 </tr>
                 <tr>
                 <td><a href="dashboards.html">000004</a></td>

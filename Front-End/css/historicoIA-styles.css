@@ -12,35 +12,7 @@ quase preto: #2b2f3a
 */
 
 
-/* LISTA DOS PROJETOS */
-
-#popupIA{
-    /* display: flex; */
-    justify-content: space-between;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    border: 1px solid #ddd;
-    padding: 10px;
-    width: 100%;
-    margin: 5px;
-    background-color: #6eddf5;
-    text-align: left;
-}
-
-#popupIA button{
-    /* margin-top: -50px; */
-    width: 200%;
-    height: 100%;
-    background-color: #6eddf5;
-    border: none;
-    font-weight: bolder;
-    transition: color 0.3s ease;
-}
-
-#popupIA button:hover{
-    cursor: pointer;
-    color: #336dc3;
-}
+/* HISTORICO */
 
 h1{
     margin-top: 20px;
@@ -69,7 +41,7 @@ h1{
 
 .novo_projeto {
     margin-top: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .botao {
@@ -147,9 +119,23 @@ h1{
 #projetos th {
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
+    text-align: center;
     background-color: #2b2f3a;
     color: #e8ebf0;
 }
 
-  /* FIM LISTA DOS PROJETOS */
+#projetos td{
+    /* text-align: left; */
+}
+
+.idProjeto{
+    width: 15%;
+}
+
+.respostaIA{
+    text-align: left;
+}
+
+
+
+  /* FIM HISTORICO */

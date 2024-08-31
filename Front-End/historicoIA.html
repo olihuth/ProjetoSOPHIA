@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico IA</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/historicoIA-styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./img/logo-black.svg" alt=""></a>
+        </div>
+        
+        <!-- Menu -->
+        <nav> 
+            <ul>
+                <!-- <li><a href="#"> Home </a></li> -->
+                <li><a href="listaProjetos.html"> Projetos </a></li>
+                <li><a href="dashboards.html"> Dashboards </a></li>
+                <li><a href="historicoIA.html"> Histórico </a></li>
+                <li><a href="sobreProjeto.html"> Sobre o Projeto </a></li>
+                <!-- <li><a href="perfil.html"> Perfil </a></li> -->
+            </ul>
+        </nav>
+        <!-- FIM Menu -->
+
+        <div class="perfilHeader">
+            <a href="perfil.html" class="perfil-link">
+                <span>Olá, <span class="usernameHeader"> admin!</span> </span>
+                <img src="./img/logo-color.png" alt="" class="avatar">
+            </a>
+        </div>
+
+        <a href="login.html" class="botao-sair">Sair</a>
+    </header>
+
+    <main>
+        <h1>Recomendações Passadas</h1>
+        <div class="botoes">
+            <div class="filterIcon">
+                <button onclick="toggleFilterDropdown()" style="font-size:36px"> <i class="fa fa-filter"></i></button>
+            </div>
+        </div>
+        <!-- dropdown filter -->
+        <div hidden id="dropdownFilter">
+            <div class="filter">
+                <div>
+                    <label for="idProjeto">ID do projeto:</label>
+                    <input id="idProjeto">
+                </div>
+                <div>
+                    <label for="responsavelProjeto">Palavras-chave da Recomendação:</label>
+                    <input id="responsavelProjeto">
+                </div>
+                <div class="filterBtn">
+                    <button>Filtrar</button>
+                </div>
+            </div>
+        </div>
+       
+        
+        <!-- Tabela com os projetos ja cadastrados -->
+        <div class="tabela_projetos">
+            <table id="projetos">
+                <tr>
+                <th class="idProjeto">ID do Projeto</th>
+                <th>Recomendação</th>
+                </tr>
+                <tr>
+                <td class="idProjeto"><a href="dashboards.html">000001</a></td>
+                <td class="respostaIA">A análise da base de dados indica que a equipe foi corretamente dimensionada para o projeto, com a maioria dos atendimentos realizados por consultores estagiários ou juniores. A complexidade dos atendimentos ficou majoritariamente em Nível 1 (89%), enquanto apenas 11% foram de Nível 2. Atendimentos de Nível 1 ocorreram ao longo de todo o período, e os de Nível 2 foram esporádicos a partir do segundo mês.</td>
+                </tr>
+                <tr>
+                <td class="idProjeto"><a href="dashboards.html">000002</a></td>
+                <td class="respostaIA">A análise da base de dados revela que a equipe foi dimensionada incorretamente, com uma maior necessidade de Consultores Seniors e menor uso de consultores Plenos do que o esperado. A complexidade dos atendimentos foi dividida entre Nível 1 (46%), Nível 2 (24%) e Nível 3 (30%). Atendimentos de Nível 1 e 3 ocorreram durante todo o período, enquanto os de Nível 2 ganharam relevância a partir do segundo mês.</td>
+                </tr>
+                <tr>
+                <td class="idProjeto"><a href="dashboards.html">000003</a></td>
+                <td class="respostaIA">A análise da base de dados indica que a equipe foi dimensionada de forma incorreta, com maior necessidade de Consultores Seniors e menor uso de consultores Plenos do que o previsto. A complexidade dos atendimentos foi distribuída entre Nível 1 (60%) e Nível 3 (40%). Ambos os níveis de atendimento ocorreram durante todo o período, mas sua frequência diminuiu ao longo do tempo.</td>
+                </tr>
+            </table>
+          </div>
+    </main>
+
+    <!-- Nessa pag vai ter um botao pra redirecionar para a pag de criacao de projeto -->
+
+    <footer>
+        <p>2024 S.O.P.H.I.A - Isabelle - Juliana - Oliver - Saul</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

@@ -42,23 +42,6 @@
     justify-content: center;
 }
 
-.left-div {
-    /* flex: 0 0 30%; /* Ocupa 30% do lado esquerdo 
-    max-height: 650px;
-    padding: 10px;
-    border: 1px solid red; */
-}
-
-.right-div {
-    /* flex: 0 0 70%;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    overflow: hidden;
-    border: 1px solid green;
-    max-height: 650px; */
-}
-
 .top-right {
     display: flex;
     justify-content: space-between;

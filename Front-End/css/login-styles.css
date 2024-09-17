@@ -10,24 +10,33 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: #1c1f26;
+    align-items:end;
+    background-color: #fff;
+    color: #fff;
 }
 
+
 .login-container {
-    background-color: #2b2f3a;
+    background-color: #111111;
     padding: 40px;
-    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px;
+    height: 1080px;
+    width: 450px;
+}
+
+.login-box{
+    background-color: #1C1F26;
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 50px;
 }
 
 .logo img {
     width: 100%;
     max-width: 300px;
     height: auto;
-    margin-bottom: 20px;
+    margin-top: 150px;
 }
 
 .login-form input {
@@ -42,16 +51,47 @@ body {
 .login-form button {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    background-color: #3a84f4;
+    margin: 15px 0;
+    background-color: #6459F0;
     border: none;
     border-radius: 5px;
     color: white;
+    font-weight: 700;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+}
+
+input::placeholder {
+    color: #000000;
+    opacity: 0.6;
+    font-size: 14px;
 }
 
 .login-form button:hover {
-    background-color: #336dc3;
+    background-color: #6459F0;
+    transform: scale(1.05);
 }
+
+.senha-form button{
+    background:none;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.3s;
+}
+
+.senha-form button:hover{
+        transform: scale(1.02);
+    }

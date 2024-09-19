@@ -4,23 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - S.O.P.H.I.A.</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/login-styles.css">
 </head>
 <body>
-    <div class="login-container">
-        <div class="logo">
-            <img src="./img/logo-no-background.svg" alt="Logo SOPHIA colorido">
+    <div class="container">
+        <div id="bannerCarousel" class=" carousel slide banner-container" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#bannerCarousel" data-slide-to="1"></li>
+            </ol>
+            <!--Imagens do Carrossel-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/Banner 1.png" class="d-block w-100" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/Banner 2.png" class="d-block w-100" alt="Imagem 2">
+                </div>
+            </div>
+            <!--Setas de Navegação-->
+            <a class="carousel-control-prev" href="#bannerCarousel" role="buton" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#bannerCarousel" role="buton" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
         </div>
-        <div class="login-box">
-            <form class="login-form" action="index.html">
-                <input type="text" placeholder="Usuário" name="login" required>
-                <input type="password" placeholder="Senha" name="password" required>
-                <button type="submit">Entrar</button>
-            </form>
-            <div class="esqueci-senha">
-                <form class="senha-form" action="">
-                    <button type="text">Esqueci minha senha</button>
+        <div class="tutorial-container">
+
+        </div>
+        <div class="login-container">
+            <div class="logo">
+                <img src="./img/logo-no-background.svg" alt="Logo SOPHIA colorido">
+            </div>
+            <div class="login-box">
+                <form class="login-form" action="index.html">
+                    <input type="text" placeholder="Usuário" name="login" required>
+                    <input type="password" placeholder="Senha" name="password" required>
+                    <button type="submit">Entrar</button>
                 </form>
+                <div class="esqueci-senha">
+                    <form class="senha-form" action="">
+                        <button type="text">Esqueci minha senha</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

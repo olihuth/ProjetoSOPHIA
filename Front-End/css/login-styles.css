@@ -8,35 +8,93 @@
 body {
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items:end;
+    align-items: center;
     background-color: #fff;
     color: #fff;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 1920px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.banner-container{
+
+    height: 100%;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.banner-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-indicators li{
+    background-color: #999;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active{
+    background-color: #6459F0;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    padding: 15px;
+    border-radius: 50%;
+}
+
+
+.tutorial-container{
+
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    height: 100vh;
+    width: 100%;
 }
 
 
 .login-container {
+
     background-color: #111111;
     padding: 40px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    height: 1080px;
-    width: 450px;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    height:100vh;
+    width: 100%;
 }
 
 .login-box{
     background-color: #1C1F26;
     border-radius: 10px;
     padding: 40px;
-    margin-top: 50px;
 }
 
 .logo img {
     width: 100%;
     max-width: 300px;
-    height: auto;
-    margin-top: 150px;
+    margin: 140px 0px 100px 0px;
 }
 
 .login-form input {
@@ -95,3 +153,4 @@ input::placeholder {
 .senha-form button:hover{
         transform: scale(1.02);
     }
+

@@ -29,7 +29,7 @@ body {
 
 /* MENU */
 header {
-    background-color: #fff;
+    background-color: #645af0;
     padding: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -37,8 +37,12 @@ header {
     align-items: center;
 }
 
+.logo{
+    padding: 10px 0px 0px 10px;
+}
+
 .logo img {
-    max-width: 150px;
+    max-width: 120px;
 }
 
 nav {
@@ -73,13 +77,14 @@ nav ul li a:hover {
 .perfilHeader {
     display: flex;
     align-items: center;
+    justify-content:space-evenly;
 }
 
 .perfil-link {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: bold;
     font-size: small;
     margin-right: 20px;
@@ -114,6 +119,35 @@ nav ul li a:hover {
 
 .botao-sair:hover {
     background-color: #336dc3;
+}
+
+.divSearch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-button{
+    height: 40px;
+    width: 30px;
+    background-color:white;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    cursor: pointer;
+    transition: 50ms;
+}
+
+.search-button img{
+    align-items: center;
+}
+
+input{
+    height: 40px;
+    width: 500px;
+    background-color: white;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    outline: none;
 }
 
 /* FIM MENU */

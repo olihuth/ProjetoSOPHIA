@@ -29,55 +29,30 @@ body {
 
 /* MENU */
 header {
-    background-color: #645af0;
+    background-color: #191643;
     padding: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .logo{
-    padding: 10px 0px 0px 10px;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 150px;
 }
 
 .logo img {
-    max-width: 120px;
+    max-width: 150px;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 20px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #645af0;
-}
 
 .perfilHeader {
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
+    margin-left: 150px;
+    margin-right: 30px;
 }
 
 .perfil-link {
@@ -87,7 +62,13 @@ nav ul li a:hover {
     color: white;
     font-weight: bold;
     font-size: small;
-    margin-right: 20px;
+    margin-right: 0px;
+}
+
+.expand-arrow{
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .usernameHeader{
@@ -96,6 +77,13 @@ nav ul li a:hover {
 
 .perfil-link span {
     margin-right: 10px;
+    margin-top: 5px;
+    font-size: medium;
+}
+
+.btn{
+    background:none;
+    border: none;
 }
 
 .avatar {
@@ -106,21 +94,6 @@ nav ul li a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.botao-sair {
-    background-color: #3a84f4;
-    color: #fff;
-    padding: 8px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-right: 5px;
-}
-
-.botao-sair:hover {
-    background-color: #336dc3;
-}
-
 .divSearch{
     display: flex;
     flex-direction: row;
@@ -128,7 +101,7 @@ nav ul li a:hover {
 }
 
 .search-button{
-    height: 40px;
+    height: 45px;
     width: 30px;
     background-color:white;
     border: none;
@@ -142,8 +115,8 @@ nav ul li a:hover {
 }
 
 input{
-    height: 40px;
-    width: 500px;
+    height: 45px;
+    width: 600px;
     background-color: white;
     border: none;
     border-radius: 0px 5px 5px 0px;

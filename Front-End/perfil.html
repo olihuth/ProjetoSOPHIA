@@ -13,30 +13,23 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="./img/logo-black.svg" alt=""></a>
+            <a href="index.html"><img src="./img/Logo-White-NoBackground.svg" alt=""></a>
         </div>
         
-        <!-- Menu -->
-        <nav> 
-            <ul>
-                <!-- <li><a href="#"> Home </a></li> -->
-                <li><a href="listaProjetos.html"> Projetos </a></li>
-                <li><a href="dashboards.html"> Dashboards </a></li>
-                <li><a href="historicoIA.html"> Histórico </a></li>
-                <li><a href="sobreProjeto.html"> Sobre o Projeto </a></li>
-                <!-- <li><a href="perfil.html"> Perfil </a></li> -->
-            </ul>
-        </nav>
-        <!-- FIM Menu -->
+        <div class="divSearch">
+            <button name="search" class="search-button" title="Pesquisar"><img src="./img/Search.svg" alt="" class="search-icon"></button>
+            <input type="search" placeholder="Buscar palavras-chave">
+        </div>
 
         <div class="perfilHeader">
             <a href="perfil.html" class="perfil-link">
                 <span>Olá, <span class="usernameHeader"> admin!</span> </span>
                 <img src="./img/logo-color.png" alt="" class="avatar">
             </a>
+            <a href="login.html" ><img src="./img/Expand_down.svg" class="expand-arrow"></a>
         </div>
 
-        <a href="login.html" class="botao-sair">Sair</a>
+        
     </header>
 
     <!-- <main>
@@ -63,7 +56,7 @@
     <div popover id="editPerfil">
         <div class="stylePopUp">
             <div class="exitPopUp">
-                <button popovertarget="editPerfil" popovertargetaction="hide" onclick="resetEditPerfilForm()">X</button>    
+                <button popovertarget="editPerfil" popovertargetaction="hide" onclick="resetEditPerfilForm()">x</button>    
             </div>
             <div class="form">
                 <form id="editPerfilForm">

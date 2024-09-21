@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/login-styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
 </head>
 <body>
     <div class="container">
@@ -39,28 +40,71 @@
             </a>
         </div>
         <div class="tutorial-container">
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rerum eligendi odio illum dolorem iusto tempore expedita ut architecto impedit provident nulla ex eaque aspernatur, porro rem qui? Sunt, illum!</p></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="tutorial-container1">
+                <h4>SELECIONE O PROJETO</h4>
+                <p>Escolha o projeto que deseja visualizar na lista disponível!</p>
+                <img src="img/list_781098.png" alt="AQUI AQUI AQUI">
+            </div>
+            <div class="tutorial-container2">
+                <h4>VISUALIZE A ANÁLISE DE DADOS</h4>
+                <p>O painel apresentará dashboards interativos com as principais métricas e informações relevantes do projeto selecionado.</p>
+                <img src="img/dashboard_10397171.png">
+            </div>
+            <div class="tutorial-container3">
+                <h4>EXPLORE PAINÉIS INTERATIVOS</h4>
+                <p>Navegue para obter insights detalhados sobre o desempenho e resultados.</p> 
+                <img src="img/search_7928577.png">
+            </div>
+            <div class="tutorial-container4">
+                <h4>SOLICITE UMA ANÁLISE PREDITIVA</h4>
+                <p>Utilize a S.H.O.P.I.A. para gerar uma análise preditiva que ajudará na tomada de decisões estratégicas para futuros projetos.</p>
+                <img src="img/logo-color.png">
+            </div>
         </div>
         <div class="login-container">
+            <!--Logo-->
             <div class="logo">
                 <img src="./img/logo-no-background.svg" alt="Logo SOPHIA colorido">
             </div>
+            <!--Fim Logo-->
+
+            <!--Caixa de Login-->
+            
             <div class="login-box">
                 <form class="login-form" action="index.html">
                     <input type="text" placeholder="Usuário" name="login" required>
                     <input type="password" placeholder="Senha" name="password" required>
                     <button type="submit">Entrar</button>
                 </form>
+
+                <!--Esqueci Minha Senha-->
                 <div class="esqueci-senha">
-                    <form class="senha-form" action="">
-                        <button type="text">Esqueci minha senha</button>
-                    </form>
+                    <button popovertarget="redefinirSenha">Esqueci minha senha</button>
+                </div>
+                
+                <div popover id="redefinirSenha">
+                    <div class="stylePopUpSenha">
+                        <div class="exitPopUpSenha">
+                            <button popovertarget="redefinirSenha" popovertargetaction="hide" onclick="resetSenhaForm()">x</button>
+                        </div>
+                        <div class="formSenha">
+                            <form id="redefinirSenhaForm">
+                                <div class="input">
+                                    <label for="email">Receba uma nova senha</label>
+                                    <input type="text" placeholder="Digite o seu E-mail" id="E-mail Usuário" required>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="submitBtn">
+                            <button type="submit" form="redefinirSenhaForm"
+                            popovertarget="senhaRedefinida">Solicitar</button>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

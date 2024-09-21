@@ -15,6 +15,10 @@ function resetEditPerfilForm(){
     document.getElementById("editPerfilForm").reset();
 }
 
+function resetSenhaForm(){
+    document.getElementById("redefinirSenha").reset();
+}
+
 function toggleFilterDropdown(){
     var element = document.getElementById("dropdownFilter");
     var hidden = element.getAttribute("hidden");
